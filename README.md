@@ -33,6 +33,30 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Waku concepts
+https://docs.waku.org
+https://docs.waku.org/learn
+
+**Content topics**
+
+```
+/{application-name}/{version}/{content-topic-name}/{encoding}
+```
+
+For example:
+```
+/supercrypto/1/notification/proto
+```
+
+**Light Push**
+Sends messages to a content topic.
+
+**Filter**
+Retrieves messages from a content topic.
+
+**Store**
+Temporary storage.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
