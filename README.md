@@ -48,6 +48,9 @@ For example:
 /supercrypto/1/notification/proto
 ```
 
+**ContentPairProvider**
+Uses the `contentTopic` to distinguish the messages we are interested in.
+
 **Light Push**
 Sends messages to a content topic.
 
