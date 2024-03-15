@@ -2,12 +2,25 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Clone the repo:
+
+```bash
+git clone git@github.com:chair28980/waku-battleship-starter.git
+cd waku-battleship-starter
+```
+
+Install dependencies with yarn:
+
+```bash
+yarn install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
 # or
-yarn dev
+yarn dev // use yarn by default
 # or
 pnpm dev
 # or
