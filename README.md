@@ -60,6 +60,16 @@ Retrieves messages from a content topic.
 **Store**
 Temporary storage.
 
+## Helpers
+
+In case connection to node fails:
+
+```js
+if (res?.errors?.length && res?.errors?.length > 0) {
+    alert('unable to connect to a stable node. please reload')
+}
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
