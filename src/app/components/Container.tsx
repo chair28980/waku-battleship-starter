@@ -4,6 +4,7 @@ import React from "react";
 import PlayerBoard from "./PlayerBoard";
 import { Player } from "../types";
 import OpponentBoard from "./OpponentBoard";
+import { useContentPair, useFilterMessages, useWaku } from "@waku/react";
 
 
 const Container = (props: {
@@ -11,6 +12,9 @@ const Container = (props: {
 }) => {
 
     const {player} = props;
+    const {node, isLoading, error} = useWaku();
+    const {decoder, encoder} = useContentPair();
+    const {messages: filterMessages} = useFilterMessages({ node, decoder });
 
     return (
         <div className="grid grid-cols-2 gap-4">
@@ -19,7 +23,11 @@ const Container = (props: {
                 Your Board
             </h1>
             <PlayerBoard 
-                player={player} 
+                player={player}
+                node={node}
+                isLoading={isLoading}
+                error={error}
+                encoder={encoder}
             />
 
 
