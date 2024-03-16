@@ -12,7 +12,7 @@ cd waku-battleship-starter
 Install dependencies with yarn:
 
 ```bash
-yarn install
+npm install
 ```
 
 Run the development server:
@@ -20,7 +20,7 @@ Run the development server:
 ```bash
 npm run dev
 # or
-yarn dev // use yarn by default
+yarn dev
 # or
 pnpm dev
 # or
